@@ -53,7 +53,7 @@ var Particle = function(x, y, directionX, directionY, size, color) {
   this.draw = function() {
     c.beginPath();
     c.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-    c.fillStyle = "#8c5523";
+    c.fillStyle = "#23558c";
     c.fill();
   };
 
@@ -104,7 +104,7 @@ function init() {
     let y = Math.random() * (innerHeight - size * 2 - size * 2) + size * 2;
     let directionX = Math.random() * 5 - 2.5;
     let directionY = Math.random() * 5 - 2.5;
-    let color = "#8c5523";
+    let color = "#23558c";
 
     particleArray.push(new Particle(x, y, directionX, directionY, size, color));
   }
@@ -133,7 +133,7 @@ function connect() {
 			// console.log(dist);
 			if(dist<(canvas.width/100)*(canvas.height/100)){
 				opacityValue = 1- (dist/200);
-				c.strokeStyle = `rgba(140,85,31,${opacityValue})`;
+				c.strokeStyle = `rgba(31,85,140,${opacityValue})`;
 				c.lineWidth = 1;
 				c.beginPath();
 				c.moveTo(particleArray[i].x,particleArray[i].y);
