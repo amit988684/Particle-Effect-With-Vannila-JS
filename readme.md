@@ -2,4 +2,4 @@
 
 ## Using Canvas and HTML5 to make particle Effect - with Vanilla JS Code
 
-![Particles](particles.png)
+![Particles](particles1.png)
